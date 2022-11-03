@@ -1,0 +1,58 @@
+:root {
+    /* {%colors%} */
+}
+
+/* Resets */
+p, 
+h1, 
+ul, 
+li,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer { 
+    margin-top: auto;
+    padding-bottom: 0.75rem;
+    text-align: center; 
+}
+
+/* Custom classes */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

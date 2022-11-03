@@ -1,0 +1,78 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --blue-gray: hsl(220, 15%, 55%);
+    --mid-blue: hsl(228, 45%, 44%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+p, h1 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+}
+
+p {
+    color: var(--blue-gray);
+}
+
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    /* this is ~16px */
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main {
+    background-color: var(--light-gray);
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+article {
+    background-color: var(--white);
+    max-width: 300px;
+    /* 16px */
+    padding: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+
+    box-shadow: 0px 14px 33px -10px rgba(123,135,157,0.75);
+    -webkit-box-shadow: 0px 14px 33px -10px rgba(123,135,157,0.75);
+    -moz-box-shadow: 0px 14px 33px -10px rgba(123,135,157,0.75);
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem 0;
+    font-size: 0.75rem; 
+}
+footer p {
+    color: var(--dark-blue);
+}
+footer a {
+    color: var(--mid-blue);
+}
