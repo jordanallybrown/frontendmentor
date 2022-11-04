@@ -36,7 +36,7 @@ Desktop
 ### Links
 
 - Solution URL: [Link to solution url](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub/order-summary-component-with-css-grid-7CIPRtMn0Y)
-- Live Site URL: [Link to live site](https://jordanallybrown.github.io/order-summary-component/)
+- Live Site URL: [Link to live site](https://jordanallybrown.github.io/frontendmentor/order-summary-card/)
 
 ## My process
 

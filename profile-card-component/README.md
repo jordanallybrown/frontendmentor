@@ -33,7 +33,7 @@ Desktop screenshot:
 ### Links
 
 - Solution URL: [Link to solution URL](https://www.frontendmentor.io/solutions/profile-card-component-challenge-using-css-flexbox-and-selectors-D2ZqwrEXTX)
-- Live Site URL: [Link to live site](https://jordanallybrown.github.io/profile-card-component/)
+- Live Site URL: [Link to live site](https://jordanallybrown.github.io/frontendmentor/profile-card-component/)
 
 ## My process
 
