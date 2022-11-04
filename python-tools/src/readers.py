@@ -29,11 +29,11 @@ class ReadmeReader(BaseReader):
 
     @property
     def repo_path_link(self) -> str:
-        return constants.REPO_LINK + constants.SUB_REPO_PATH + self._challenge_repo_name
+        return constants.REPO_LINK_PATH + constants.SUB_REPO_PATH + self._challenge_repo_name
 
     @property
     def live_link(self) -> str:
-        return constants.REPO_LINK + self._challenge_repo_name + '/'
+        return constants.LIVE_LINK_PATH + self._challenge_repo_name + '/'
 
     @property
     def challenge_name(self) -> str:

@@ -1,5 +1,6 @@
 ''' REPO '''
-REPO_LINK = 'https://jordanallybrown.github.io/frontendmentor/'
+LIVE_LINK_PATH = 'https://jordanallybrown.github.io/frontendmentor/'
+REPO_LINK_PATH = 'https://github.com/jordanallybrown/frontendmentor/'
 SUB_REPO_PATH = 'tree/main/'
 
 ''' FRONTENDMENTOR '''
