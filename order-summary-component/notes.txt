@@ -1,0 +1,36 @@
+align-items and align-content in flexbox are different. You can use align-items along with justify-content. align-content has no effect without flex-wrap being set
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+information on buttons for screen readers: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role
+
+An article on css variable naming opinions: 
+https://foxland.fi/naming-typography-css-variables/
+
+An explanation and examples of the Block, Element and Modify (BEM) CSS naming convention to help code readability
+https://brayanarrieta.hashnode.dev/guide-to-bem-naming-convention-to-css
+
+An article arguing why I should always include h1 tags on webpages: 
+https://moz.com/blog/h1-seo-experiment
+
+semantic html cheatsheet:
+https://learn-the-web.algonquindesign.ca/topics/html-semantics-cheat-sheet/
+
+How to use the description list tag (pretty cool! I always like discovering new tags): 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
+
+Another useful BEM article: 
+https://css-tricks.com/bem-101/
+
+code snippet on removing default button styles: 
+https://www.codegrepper.com/code-examples/css/remove+default+style+button
+
+https://uxmovement.com/buttons/when-to-use-a-button-or-link/
+good article explaining when to use buttons vs. hyperlinks for better ux. In short, use buttons when the back-end/front-end will change and use links when user is just browseing and no change occurs. In my case, the cancel order should be a link rather than a button because the user is jsut broswing/changed their mind and the backend is not affected. while proceed to payment is a button that changes the backend since the user is submitting an action.
+
+all the things you can assign to css variables: 
+https://codersblock.com/blog/what-can-you-put-in-a-css-variable/
+
+
+how to animate button click: 
+https://www.w3schools.com/howto/howto_css_animate_buttons.asp
+
