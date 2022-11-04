@@ -23,8 +23,13 @@ class ReadmeReader(BaseReader):
         self._challenge_repo_name: str = None
         self._header_content: list[str] = None
         self._live_link: str = None
+        self._repo_path_link: str = None
         self._h1: str = None
         self._read()
+
+    @property
+    def repo_path_link(self) -> str:
+        return constants.REPO_LINK + constants.SUB_REPO_PATH + self._challenge_repo_name
 
     @property
     def live_link(self) -> str:

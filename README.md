@@ -6,7 +6,7 @@ These are my solutions to the Frontend Mentor challenges. Frontend Mentor offers
 
 | No.   | Challenge (repo link) | Live site | Solution url | Level |
 | :---  |   :---   |  :---   |:---   |:---   |
-| 1 | Qr code component | [Live link](https://jordanallybrown.github.io/frontendmentor/qr-code-component/) | Solution link | Newbie |
+| 1 | [Qr code component](https://jordanallybrown.github.io/frontendmentor/tree/main/qr-code-component) | [Live link](https://jordanallybrown.github.io/frontendmentor/qr-code-component/) | Solution link | Newbie |
 
 
 ## Author

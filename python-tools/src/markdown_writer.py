@@ -37,14 +37,14 @@ class TableWriter:
         return False if not clean_txt else clean_txt[0] == '|' and clean_txt[-1] == '|'
 
     def _create_row(self, nrow: int, readme_obj: ReadmeReader) -> str:
-        return f'| {nrow} | {readme_obj.challenge_name} | [Live link]({readme_obj.live_link}) | Solution link | {constants.LEVEL} |\n'
+        return f'| {nrow} | [{readme_obj.challenge_name}]({readme_obj.repo_path_link}) | [Live link]({readme_obj.live_link}) | Solution link | {constants.LEVEL} |\n'
 
     def write(self) -> str:
 
         try: 
             logger.info(f'Read challenge README to get challenge name and repo link.')
             challenge_readme = ReadmeReader(self._challenge_path / constants.README)
-            
+        
             logger.info(f'Parse the {constants.TABLE_HEADER} table in {self._readme_path}')
             with self._readme_path.open('r+') as readme:
 

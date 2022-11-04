@@ -1,5 +1,6 @@
 ''' REPO '''
 REPO_LINK = 'https://jordanallybrown.github.io/frontendmentor/'
+SUB_REPO_PATH = 'tree/main/'
 
 ''' FRONTENDMENTOR '''
 LEVEL = 'Newbie'
