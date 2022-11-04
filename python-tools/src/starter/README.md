@@ -18,7 +18,7 @@
 ### Links
 
 - [Frontendmentor solution]()
-- [Live site](https://jordanallybrown.github.io/frontendmentor/{%challenge%}/)
+- [Live site](https://jordanallybrown.github.io/frontendmentor/challenge/)
 
 ## My process
 

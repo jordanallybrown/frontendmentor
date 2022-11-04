@@ -18,7 +18,7 @@ STARTER_FOLDER = 'starter'
 STYLES_FOLDER = 'styles'
 
 ''' PLACEHOLDERS '''
-CHALLENGE_PLACEHOLDER = '{%challenge%}'
+CHALLENGE_PLACEHOLDER = 'challenge'
 COLORS_PLACEHOLDER = '/* {%colors%} */'
 
 ''' MARKDOWN SYMBOLS '''
