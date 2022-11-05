@@ -1,0 +1,60 @@
+:root {
+    --color-primary-cyan: hsl(158, 36%, 37%);
+    --color-primary-cream: hsl(30, 38%, 92%);
+    --color-neutral-blue: hsl(212, 21%, 14%);
+    --color-neutral-gray: hsl(228, 12%, 48%);
+    --color-neutral-white: hsl(0, 0%, 100%);
+
+    --font-family-sans: 'Montserrat', sans-serif;
+    --font-family-serif: 'Fraunces', serif;
+    --font-size-md: 0.875rem; /* 14px */
+    --font-weight-md: 500;
+    --font-weight-bold: 700;
+}
+
+p, h2{
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    border: 2px solid pink;
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    border: 1px solid blue;
+    margin-top: auto;
+}
+
+article {
+    border: 1px solid orange;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+}
+
+article > div {
+    border: 2px solid darkmagenta;
+}
+
+/* picture {
+    display: flex;
+} */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
