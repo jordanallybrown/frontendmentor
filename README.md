@@ -10,7 +10,7 @@ These are my solutions to the Frontend Mentor challenges. Frontend Mentor offers
 | 2   | [Profile card component](https://github.com/jordanallybrown/frontendmentor/tree/main/profile-card-component)         | [Live link](https://jordanallybrown.github.io/frontendmentor/profile-card-component/)     | Solution link | Newbie |
 | 3   | [Order summary card](https://github.com/jordanallybrown/frontendmentor/tree/main/order-summary-card)                 | [Live link](https://jordanallybrown.github.io/frontendmentor/order-summary-card/)         | Solution link | Newbie |
 | 4   | [Nft preview card component](https://github.com/jordanallybrown/frontendmentor/tree/main/nft-preview-card-component) | [Live link](https://jordanallybrown.github.io/frontendmentor/nft-preview-card-component/) | Solution link | Newbie |
-| 5   | [Blog preview card]()                                                                                                | [Live link]()                                                                             | Solution link | Newbie |
+| 5   | [Blog preview card](https://github.com/jordanallybrown/frontendmentor/tree/main/blog-preview-card-main/)             | [Live link](https://jordanallybrown.github.io/frontendmentor/blog-preview-card-main/)     | Solution link | Newbie |
 
 ## Author
 
