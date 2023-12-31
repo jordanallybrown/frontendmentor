@@ -120,6 +120,7 @@ select {
   flex-direction: column;
   gap: 1.5em;
   border: 1px solid var(--black);
+  box-shadow: 0.5rem 0.5rem var(--black);
 }
 
 .card__feature-img {
