@@ -26,21 +26,28 @@
       <h1 class="sr-only">Blog preview card</h1>
       <article class="card">
         <img
+          class="card__feature-img"
           src="./assets/images/illustration-article.svg"
           alt="Article illustration for blog post"
         />
-        <ul>
-          <li>Learning</li>
-        </ul>
-        <small>Published 21 Dec 2023 </small>
-        <h2>HTML & CSS foundations</h2>
-        <p>
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </p>
-        <div>
-          <img src="./assets/images/image-avatar.webp" alt="Author avatar" />
-          <p>Greg Hooper</p>
+        <div class="card__content">
+          <ul class="card__categories">
+            <li>Learning</li>
+          </ul>
+          <small class="card__post-meta">Published 21 Dec 2023 </small>
+          <h2 class="card__title">HTML & CSS foundations</h2>
+          <p class="card__description">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <div class="card__author-meta">
+          <img
+            class="card__avatar"
+            src="./assets/images/image-avatar.webp"
+            alt="Author avatar"
+          />
+          <p class="card__author">Greg Hooper</p>
         </div>
       </article>
     </main>
