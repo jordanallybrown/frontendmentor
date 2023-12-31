@@ -1,0 +1,230 @@
+:root {
+
+    --color-primary__blue: hsl(215, 51%, 70%);
+    --color-primary__cyan: hsl(178, 100%, 50%);
+    --color-neutral__dark-blue--main-bg: hsl(217, 54%, 11%);
+    --color-neutral__dark-blue--card-bg: hsl(216, 50%, 16%);
+    --color-neutral__dark-blue--line-bg: hsl(215, 32%, 27%);
+    --color-neutral__white: hsl(0, 0%, 100%);
+    --color-transparent-blue: hsl(215, 51%, 70%, 0.307);
+    --color-transparent-cyan: hsla(178, 100%, 50%, 0.752);
+
+    --font-family-sans: 'Outfit', sans-serif;
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 1rem;
+    --font-size-md: 1.125rem; /* 18px */
+    --font-size-lg: 1.313rem; /* 21px */
+
+    --card--width: 300px;
+    --card--spacing-md: 1.25rem;
+    --card--spacing-sm: 1rem;
+
+    /* consider the icon taking up the entire content size but look at later */
+    --card__icon--width: 2rem; 
+
+}
+
+/* Resets */
+p, 
+h1, 
+ul, 
+li,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-light);
+    color: var(--color-primary__blue);
+    background-color: var(--color-neutral__dark-blue--main-bg);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer { 
+    margin-top: auto;
+    font-size: var(--font-size-xs); 
+    padding-bottom: 0.75rem;
+    text-align: center; 
+}
+
+a {
+    color: var(--color-neutral__white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover, 
+a:active {
+    color: var(--color-primary__cyan);
+}
+/* Class styles */
+
+.card {
+    max-width: var(--card--width);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: var(--card--spacing-md);
+    gap: var(--card--spacing-sm);
+    background-color: var(--color-neutral__dark-blue--card-bg);
+}
+
+.card__hero {
+    border-radius: 0.5rem;
+    height: var(--card--width);
+    position: relative;
+    transition: 0.4s;
+}
+.card__hero img {
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+    z-index: -1;   
+}
+
+.card__hero:hover {
+    background-color: var(--color-transparent-cyan);
+    /* The view icon was transparent, so use pseudo before property instead */
+    /* background-image: url(../images/icon-view.svg); */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card__hero img:hover {
+    opacity: 0.3;
+}
+.card__hero:hover::before {
+    content: url(../images/icon-view.svg);
+    position: absolute;
+    /* center the view icon completely */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    /* Makes the view icon in front to stay white color rather than transparent */
+    z-index: 1;
+    /* Makes sure that even when user hovers over view icon, the card__hero hover effects are still in place */
+    pointer-events: none;
+}
+
+
+
+.card__header {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+}
+
+.card__description {
+    font-weight: var(--font-weight-light);
+}
+
+.card__listing-meta {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid white; */
+    align-items: center;
+    align-content: center;
+}
+
+/* Way to modify the list-style decoration but can't be centered */
+/* For some reason needed to target parent card class for the ul overrides to work */
+/* .card ul {
+    list-style-image: url(../images/icon-clock.svg);
+    list-style-position: inside;
+}
+
+.card ul li:first-child {
+    color: var(--color-primary__cyan);
+    list-style-image: url(../images/icon-ethereum.svg);
+    font-weight: var(--font-weight-semibold);
+} */
+
+
+
+li {
+    position: relative;
+    list-style-type: none;
+}
+
+ul li:first-child {
+    padding-left: 17px;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary__cyan);
+}
+
+li:first-child:before {
+    content: url(../images/icon-ethereum.svg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 11px;
+    height: 18px;
+}
+
+li:last-child:before {
+    content: url(../images/icon-clock.svg);
+    position: absolute;
+    left: -22px;
+    top: 0;
+    width: 17px;
+    height: 17px;
+}
+
+.card__author-meta {
+    border-top: 1px solid var(--color-transparent-blue);
+    display: flex;
+    padding-top: 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.card__author-icon {
+    max-height: var(--card__icon--width);
+    border-radius: 50%;
+    border: 1px solid var(--color-neutral__white);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

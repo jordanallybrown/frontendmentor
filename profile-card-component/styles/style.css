@@ -1,0 +1,154 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --dark-gray-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --light-gray: hsl(0, 1%, 82%);
+    --hyperlink-color: hsl(228, 45%, 44%);
+}
+
+
+p, h1, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+html, body {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    color: var(--dark-blue);
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+    background-repeat: no-repeat;
+    background-image: url("../images/bg-pattern-bottom.svg"), url("../images/bg-pattern-top.svg");
+    background-attachment: fixed;
+    /* background-position: right bottom, left top; */
+    background-position: right -35.25rem bottom -28rem, left -38.25rem top -26rem;
+    background-size: 50rem, 50rem;
+    overflow: hidden;
+    font-size: .9rem;
+}
+
+
+h1 {
+    font-size: 1.125rem;
+}
+
+main {
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    padding-top: 5rem;
+    text-align: center;
+    align-items: center;
+    /* this allows us to have the ul border take up 100% width but still keep the border radius of the article by adding padding to the bottom */
+    padding-bottom: 1.5rem;
+    border-radius: .75rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-image: url("../images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+img {
+    width: 35%;
+    border-radius: 50%;
+    border: .5rem white solid;
+   
+}
+
+ul {
+    display: flex;
+    /* background-color: pink; */
+    justify-content: space-evenly;
+    width: 100%;
+    border-top: 1px solid var(--light-gray);
+    padding-top: 1.5rem;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+/* Experimenting with CSS selectors! */
+
+/* target all p elements that are first children, further make it specific with li tag so we only target those within our list content */
+li p:first-child {
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Targets all p tags that are second children, further make it specific by preceding with li */
+li p:nth-child(2) {
+    text-transform: capitalize;
+    color: var(--dark-gray);
+    font-size: .6rem;
+    letter-spacing: .15em;
+}
+
+/* Targets the p tag immediately follwoing h1 */
+h1 + p {
+    color: var(--dark-gray);
+   
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+footer {
+
+    margin-top: auto;
+    font-size: 0.75rem; 
+    text-align: center;
+    padding: .5rem 0;
+}
+
+
+footer a { 
+    color: var(--hyperlink-color); 
+}
+
+.light-text {
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+.extra-padding {
+    padding-left: .4rem;
+}
+
+
+/* desktop guidelines is 1440px but using 1000px for aesthetics */
+@media screen and (min-width: 1000px) {
+    body {
+        background-position: right -5.25rem bottom -23rem, left -5.25rem top -23rem;
+    }
+}
+
+
