@@ -113,7 +113,7 @@ select {
 
 .card {
   background-color: var(--white);
-  max-width: 384px;
+  max-width: 327px;
   padding: 1.5em;
   border-radius: 20px;
   display: flex;
@@ -165,4 +165,11 @@ select {
   font-size: var(--fs-sm);
   font-weight: var(--fw-extrabold);
   align-self: center;
+}
+
+@media only screen and (min-width: 1440px) {
+  /* For desktop: */
+  .card {
+    max-width: 384px;
+  }
 }
