@@ -150,6 +150,16 @@ select {
   font-size: var(--fs-sm);
 }
 
+.card__title a {
+  text-decoration: none;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.card__title a:hover,
+.card__title a:focus {
+  color: var(--yellow);
+}
 .card__description {
   color: var(--gray);
 }
