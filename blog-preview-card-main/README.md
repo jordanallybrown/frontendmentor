@@ -33,6 +33,15 @@ To create the img zoom on hover state, I achieved this by using a combination of
 }
 ```
 
+How to get the font size to change sizes according to the viewport size without a media query:
+
+```css
+--fs-lg: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
+```
+
+- [Calculator for Clamp args to change font size based on viewport](https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/#for-those-who-dont-mind-that-edge-case)
+- [Medium article explanation for clamp](https://blog.bitsrc.io/css-clamp-the-responsive-combination-weve-all-been-waiting-for-f1ce1981ea6e)
+
 ## Useful Resources
 
 - [StackOverflow Img Zoom Affect](https://stackoverflow.com/questions/69491728/how-to-zoom-an-image-on-mouse-hover-using-css)
