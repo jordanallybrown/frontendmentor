@@ -205,7 +205,6 @@ select {
 }
 
 @media only screen and (min-width: 1440px) {
-  /* For desktop: */
   .card {
     max-width: 384px;
   }
