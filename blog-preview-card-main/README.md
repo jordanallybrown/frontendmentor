@@ -37,3 +37,4 @@ To create the img zoom on hover state, I achieved this by using a combination of
 
 - [StackOverflow Img Zoom Affect](https://stackoverflow.com/questions/69491728/how-to-zoom-an-image-on-mouse-hover-using-css)
 - [W3C Smooth Transition Hover text](https://www.w3schools.com/howto/howto_css_transition_hover.asp)
+- [Cool card move effect when hovering via Figma example](https://help.figma.com/hc/en-us/articles/360039956894-Add-a-font-to-Figma-design)

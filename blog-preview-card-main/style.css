@@ -120,8 +120,15 @@ select {
   flex-direction: column;
   gap: 1.5em;
   border: 1px solid var(--black);
-  box-shadow: 0.5rem 0.5rem var(--black);
+  box-shadow: 8px 8px var(--black);
+  /* transition: all 0.3s ease-in; */
 }
+
+/* cool card move effect when you hover */
+/* .card:hover {
+  transform: translate(8px, 8px);
+  box-shadow: 2px 2px var(--black);
+} */
 
 /* Had to create a container class OUTSIDE of img to get this to work, making this class directly on the img does not. */
 .card__feature {
