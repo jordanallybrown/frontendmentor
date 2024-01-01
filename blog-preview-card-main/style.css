@@ -123,8 +123,21 @@ select {
   box-shadow: 0.5rem 0.5rem var(--black);
 }
 
-.card__feature-img {
+/* Had to create a container class OUTSIDE of img to get this to work, making this class directly on the img does not. */
+.card__feature {
+  /* max-width: 100%; or exact px size 300px? Not sure if this is needed */
+  overflow: hidden; /* ensures img does not stretch outside of its size bounds */
   border-radius: 10px;
+}
+
+.card__feature img {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.card__feature img:hover {
+  transform: scale(1.2);
 }
 
 .card__content {
@@ -155,6 +168,7 @@ select {
   text-decoration: none;
   color: var(--black);
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .card__title a:hover,
