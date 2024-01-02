@@ -1,7 +1,7 @@
 :root {
   --bright-orange: hsl(31, 77%, 52%);
-  --dark-cyan: hsl(184, 100%, 22%);
-  --darker-cyan: hsl(179, 100%, 13%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
   --transparent-white: hsla(0, 0%, 100%, 0.75);
   --light-gray: hsl(0, 0%, 95%);
   --fs-md: 1rem;
@@ -18,9 +18,64 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--transparent-white);
+  padding: 5rem 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 327px;
+  gap: 1.5rem;
+  padding: 3rem;
 }
 
 .card__title {
   font-family: var(--ff-heading);
   font-size: var(--fs-lg);
+  color: var(--light-gray);
+}
+
+.card__cta {
+  border: 2px solid transparent;
+  border-radius: 25px;
+  padding: 0.75em 2em;
+  background-color: var(--light-gray);
+}
+
+.card__cta:hover,
+.card__cta:focus {
+  border: 2px solid var(--light-gray);
+  background-color: inherit;
+  color: white;
+}
+/* Utility classes */
+.text-white {
+  color: var(--transparent-white);
+}
+.text-orange {
+  color: var(--bright-orange);
+}
+.text-cyan {
+  color: var(--cyan);
+}
+.text-dark-cyan {
+  color: var(--dark-cyan);
+}
+.bg-orange {
+  background-color: var(--bright-orange);
+}
+.bg-cyan {
+  background-color: var(--cyan);
+}
+.bg-dark-cyan {
+  background-color: var(--dark-cyan);
+}
+.border-top-rounded {
+  border-radius: 8px 8px 0px 0px;
+}
+.border-bottom-rounded {
+  border-radius: 0px 0px 8px 8px;
 }
