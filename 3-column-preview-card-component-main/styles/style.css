@@ -11,8 +11,13 @@
 }
 
 .container {
+  min-height: 100vh;
   font-family: var(--ff-body);
   font-size: var(--fs-md);
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card__title {
