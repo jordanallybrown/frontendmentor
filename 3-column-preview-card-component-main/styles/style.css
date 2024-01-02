@@ -15,11 +15,12 @@
   font-family: var(--ff-body);
   font-size: var(--fs-md);
   background-color: var(--light-gray);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--transparent-white);
   padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -30,6 +31,13 @@
   max-width: 327px;
   gap: 1.5rem;
   padding: 3rem;
+}
+
+.card:first-of-type {
+  border-radius: 8px 8px 0px 0px;
+}
+.card:last-of-type {
+  border-radius: 0px 0px 8px 8px;
 }
 
 .card__title {
@@ -73,9 +81,15 @@
 .bg-dark-cyan {
   background-color: var(--dark-cyan);
 }
-.border-top-rounded {
-  border-radius: 8px 8px 0px 0px;
-}
-.border-bottom-rounded {
-  border-radius: 0px 0px 8px 8px;
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+  }
+  .card:first-of-type {
+    border-radius: 8px 0px 0px 8px;
+  }
+  .card:last-of-type {
+    border-radius: 0px 8px 8px 0px;
+  }
 }
