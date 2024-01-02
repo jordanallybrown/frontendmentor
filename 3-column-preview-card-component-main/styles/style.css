@@ -9,3 +9,13 @@
   --ff-body: "Lexend Deca", sans-serif;
   --ff-heading: "Big Shoulders Display", sans-serif;
 }
+
+.container {
+  font-family: var(--ff-body);
+  font-size: var(--fs-md);
+}
+
+.card__title {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-lg);
+}
