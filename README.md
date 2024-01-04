@@ -1,10 +1,10 @@
 # Frontend Mentor Challenges
 
-These are my solutions to the Frontend Mentor challenges. Frontend Mentor offers web design mockups to use for developers to practice translating static designs into interactive websites.
+These are my solutions to the Frontend Mentor challenges. Frontend Mentor offers web design mockups for developers to practice translating static designs into interactive websites.
 
 ## Purpose
 
-My goal in tackling the challenges is to build a daily practice of challenging myself to rapidly intepret and prototype designs into functional code that's accessible, efficient, clean (and delightful) code. You can read more about my developer workflow process here.
+My goal is to build a daily practice of challenging myself to rapidly interpret and prototype designs into functional code that's accessible, efficient, clean (and delightful) code. You can read more about my developer workflow process here.
 
 ## Solutions
 
