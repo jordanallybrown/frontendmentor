@@ -1,6 +1,6 @@
 # Frontend Mentor Challenges
 
-These are my solutions to the Frontend Mentor challenges. Frontend Mentor offers web design challenges to practice translating designs into interactive websites.
+These are my solutions to the Frontend Mentor challenges. Frontend Mentor offers web design mockups to use for developers to practice translating designs into interactive websites.
 
 ## Solutions
 
