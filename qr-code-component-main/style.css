@@ -1,0 +1,88 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+  --fs-lg: 22px;
+  --fs-md: 15px;
+  --sp-sm: 16px;
+  --sp-md: 24px;
+  --sp-lg: 40px;
+  --ff: "Outfit", sans-serif;
+  --fw-bold: 700;
+  --fw-regular: 400;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up root font size (1rem = 16px) */
+html {
+  font-size: 16px;
+}
+
+/* Base body styling */
+body {
+  font-family: var(--ff);
+  line-height: 1.5;
+  background-color: var(--slate-300);
+  color: var(--slate-500);
+  -webkit-font-smoothing: antialiased;
+  /* padding: 2rem; */
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  line-height: 1.4;
+}
+
+p {
+  line-height: 1.2;
+  /* letter-spacing: ; */
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images and videos */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Lists */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Buttons and inputs */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
