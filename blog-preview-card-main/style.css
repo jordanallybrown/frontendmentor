@@ -1,0 +1,76 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --ff: "Figtree", sans-serif;
+  --fs-lg: 1.5rem; /* 24px */
+  --fs-md: 1rem;
+  --fs-sm: 0.875rem; /* 14px */
+  --sp-lg: 1.5rem;
+  --sp-md: 0.75rem; /* 12px */
+  --sp-sm: 0.5rem; /* 8px */
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up root font size (1rem = 16px) */
+html {
+  font-size: 16px;
+}
+
+/* Base body styling */
+body {
+  height: 100vh; /* make body element take up height of entire screen */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--ff);
+  background-color: var(--yellow);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images and videos */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Lists */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Buttons and inputs */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
