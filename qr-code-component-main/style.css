@@ -54,12 +54,14 @@ h1 {
   font-size: var(--fs-lg);
   letter-spacing: 0em; /* 0px */
   padding-top: 1.5rem;
+  font-weight: var(--fw-bold);
 }
 
 p {
   line-height: 1.2;
   font-size: var(--fs-md);
   letter-spacing: 0.013em; /* 0.2px / 15px */
+  font-weight: var(--fw-regular);
 }
 
 /* Links */
