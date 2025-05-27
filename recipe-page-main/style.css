@@ -55,7 +55,7 @@ h4,
 h5,
 h6,
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 /* Links */
@@ -100,7 +100,7 @@ main {
   padding: var(--space-1600) var(--space-600);
 }
 
-article {
+.card {
   background-color: var(--white);
   max-width: 736px;
   border-radius: var(--space-300);
@@ -108,4 +108,17 @@ article {
   flex-direction: column;
   padding: var(--space-500);
   gap: var(--space-500);
+}
+
+.card__hero {
+  border-radius: var(--space-150);
+}
+
+.card h1 {
+  margin-bottom: 1rem;
+  color: var(--stone-900);
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-serif);
+  font-size: var(--fs-2xl);
+  line-height: 1;
 }
