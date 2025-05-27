@@ -1,0 +1,88 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --ff-sans-serif: "Outfit", sans-serif;
+  --ff-serif: "Young Serif", serif;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem; /* 20px */
+  --fs-xl: 1.75rem; /* 28px */
+  --fs-2xl: 2.5rem; /* 40px */
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --space-100: 0.5rem; /* 8px */
+  --space-150: 0.75rem; /* 12px */
+  --space-200: 1rem;
+  --space-300: 1.5rem; /* 24px */
+  --space-300: 2rem; /* 32px */
+  --space-500: 2.5rem; /* 40px */
+  --space-600: 3rem; /* 48px */
+  --space-1600: 8rem; /* 128px */
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up root font size (1rem = 16px) */
+html {
+  font-size: 16px;
+}
+
+/* Base body styling */
+body {
+  height: 100vh; /* make body element take up height of entire screen */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images and videos */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Lists */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Buttons and inputs */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
