@@ -39,9 +39,12 @@ html {
 
 /* Base body styling */
 body {
-  height: 100vh; /* make body element take up height of entire screen */
+  min-height: 100vh; /* ensure body, at minimum, takes up entire screen and grows if needed */
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--stone-100);
+  font-family: var(--ff-sans-serif);
+  color: var(--stone-600);
 }
 
 /* Headings */
@@ -85,4 +88,19 @@ select {
   border: none;
   outline: none;
   background: none;
+}
+
+/* Custom styles */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: var(--space-1600) var(--space-600);
+}
+
+article {
+  background-color: var(--white);
+  max-width: 736px;
 }
