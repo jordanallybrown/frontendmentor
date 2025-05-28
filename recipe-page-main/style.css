@@ -183,3 +183,25 @@ main {
   margin-bottom: var(--space-200);
   padding-left: var(--space-200);
 }
+
+.card__instructions ol li::marker {
+  color: var(--rose-800);
+}
+
+/* To create space between the ordered list item decimal and numbers, make the decimal outside then add padding to BOTH the ol and ul */
+.card__instructions ol {
+  list-style: decimal outside;
+}
+
+.card__instructions ol li {
+  margin-bottom: var(--space-100);
+  padding-left: var(--space-300);
+}
+
+.card__instructions ol {
+  padding-left: var(--space-300);
+}
+.card__instructions {
+  border-bottom: 1px solid var(--stone-150);
+  padding-bottom: var(--space-300);
+}
