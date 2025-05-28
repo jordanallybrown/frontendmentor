@@ -205,3 +205,37 @@ main {
   border-bottom: 1px solid var(--stone-150);
   padding-bottom: var(--space-300);
 }
+
+.card__nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.card__nutrition caption {
+  text-align: left;
+  margin-bottom: var(--space-300);
+}
+.card__nutrition th {
+  text-align: left;
+  font-weight: var(--fw-regular);
+}
+.card__nutrition td {
+  font-weight: var(--fw-bold);
+}
+.card__nutrition th,
+.card__nutrition td {
+  border-bottom: 1px solid var(--stone-150);
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 32px;
+}
+
+table tr:last-child td,
+table tr:last-child th {
+  border-bottom: none;
+}
+
+table tr:first-child th,
+table tr:first-child td {
+  padding-top: var(--space-100);
+}
