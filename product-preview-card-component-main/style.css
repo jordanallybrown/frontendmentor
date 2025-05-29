@@ -1,0 +1,82 @@
+/* =====================
+   Josh Comeau Reset Styles
+   ===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* =====================
+   CSS Variables
+   ===================== */
+:root {
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+  --ff-serif: "Fraunces", serif;
+  --ff-sans-serif: "Montserrat", sans-serif;
+  --fw-bold: 700;
+  --fw-regular: 500;
+  --fs-text-preset-1: 2rem;
+  --lh-text-preset-1: 1;
+  --ls-text-preset-1: 0;
+  --fs-text-preset-2: 0.875rem;
+  --lh-text-preset-2: 1.1;
+  --ls-text-preset-2: 0;
+}
