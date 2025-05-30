@@ -24,6 +24,7 @@ canvas,
 svg {
   max-inline-size: 100%;
   block-size: auto;
+  display: block;
 }
 input,
 button,
@@ -156,3 +157,25 @@ h6 {
 /* =====================
    Custom Styles
    ===================== */
+body {
+  font-family: var(--ff-sans-serif);
+  color: var(--grey);
+  background-color: var(--cream);
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+}
+
+.product-card picture img {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
