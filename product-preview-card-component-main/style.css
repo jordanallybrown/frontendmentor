@@ -138,6 +138,7 @@ h6 {
   font-size: var(--fs-text-preset-5);
   line-height: var(--lh-text-preset-5);
   letter-spacing: var(--ls-text-preset-5);
+  text-decoration: line-through;
 }
 
 .btn {
@@ -178,4 +179,28 @@ main {
 
 .product-card picture img {
   border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.product-card .content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.product-card .category {
+  text-transform: uppercase;
+}
+
+.product-card h1 {
+  color: var(--black);
+}
+
+.product-card .pricing {
+  display: flex;
+  gap: 1rem;
+}
+
+.product-card .pricing-new {
+  color: var(--green-500);
 }
