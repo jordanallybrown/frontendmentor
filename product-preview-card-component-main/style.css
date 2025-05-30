@@ -155,8 +155,9 @@ h6 {
   background-color: var(--green-500);
 }
 
-.btn-hover {
+.btn-default:hover {
   background-color: var(--green-700);
+  cursor: pointer;
 }
 
 /* =====================
