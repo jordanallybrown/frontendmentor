@@ -75,10 +75,10 @@ h6 {
   --fw-extralight: 200;
   --fw-regular: 400;
   --fw-semibold: 600;
-  --fs-text-preset-1: 2.25rem;
+  --fs-text-preset-1: 1.5rem;
   --lh-text-preset-1: 1.4;
   --ls-text-preset-1: 0.00694em;
-  --fs-text-preset-2: 2.25rem;
+  --fs-text-preset-2: 1.5rem;
   --lh-text-preset-2: 1.4;
   --ls-text-preset-2: 0.00694em;
   --fs-text-preset-3: 1.25rem;
@@ -90,6 +90,8 @@ h6 {
   --fs-text-preset-5: 0.8125rem;
   --lh-text-preset-5: 1.6;
   --ls-text-preset-5: 0;
+  --space-700: 4.625rem; /* add larger space 74px*/
+  --space-600: 3.75rem; /* add larger space 60px*/
   --space-500: 2.5rem; /* 40px */
   --space-400: 2rem; /* 32px */
   --space-300: 1.5rem; /* 24px */
@@ -138,4 +140,40 @@ h6 {
   font-size: var(--fs-text-preset-5);
   line-height: var(--lh-text-preset-5);
   letter-spacing: var(--ls-text-preset-5);
+}
+
+/* =====================
+   Custom Styles
+   ===================== */
+body {
+  font-family: var(--ff-sans-serif);
+  color: var(--grey-500);
+  background-color: var(--white);
+}
+
+main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  gap: var(--space-600);
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+  max-width: 316px;
+  justify-self: center;
+}
+
+.title,
+.headline,
+.description {
+  text-align: center;
+}
+
+.card-wrapper {
+}
+
+.card {
 }
