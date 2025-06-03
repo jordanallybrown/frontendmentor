@@ -1,0 +1,141 @@
+/* =====================
+   Reset Styles
+   ===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* =====================
+   CSS Variables
+   ===================== */
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --grey-500: hsl(234, 12%, 34%);
+  --grey-400: hsl(212, 6%, 44%);
+  --white: hsl(0, 0%, 100%);
+  --ff-sans-serif: "Poppins", sans-serif;
+  --fw-extralight: 200;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fs-text-preset-1: 2.25rem;
+  --lh-text-preset-1: 1.4;
+  --ls-text-preset-1: 0.00694em;
+  --fs-text-preset-2: 2.25rem;
+  --lh-text-preset-2: 1.4;
+  --ls-text-preset-2: 0.00694em;
+  --fs-text-preset-3: 1.25rem;
+  --lh-text-preset-3: 1.35;
+  --ls-text-preset-3: 0;
+  --fs-text-preset-4: 0.9375rem;
+  --lh-text-preset-4: 1.4;
+  --ls-text-preset-4: 0;
+  --fs-text-preset-5: 0.8125rem;
+  --lh-text-preset-5: 1.6;
+  --ls-text-preset-5: 0;
+  --space-500: 2.5rem; /* 40px */
+  --space-400: 2rem; /* 32px */
+  --space-300: 1.5rem; /* 24px */
+  --space-200: 1rem; /* 16px */
+  --space-100: 0.5rem; /* 8px */
+}
+
+/* =====================
+   Utility Classes
+   ===================== */
+.text-preset-1 {
+  font-family: var(--ff-sans-serif);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-text-preset-1);
+  line-height: var(--lh-text-preset-1);
+  letter-spacing: var(--ls-text-preset-1);
+}
+
+.text-preset-2 {
+  font-family: var(--ff-sans-serif);
+  font-weight: var(--fw-extralight);
+  font-size: var(--fs-text-preset-2);
+  line-height: var(--lh-text-preset-2);
+  letter-spacing: var(--ls-text-preset-2);
+}
+
+.text-preset-3 {
+  font-family: var(--ff-sans-serif);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-text-preset-3);
+  line-height: var(--lh-text-preset-3);
+  letter-spacing: var(--ls-text-preset-3);
+}
+
+.text-preset-4 {
+  font-family: var(--ff-sans-serif);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-text-preset-4);
+  line-height: var(--lh-text-preset-4);
+  letter-spacing: var(--ls-text-preset-4);
+}
+
+.text-preset-5 {
+  font-family: var(--ff-sans-serif);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-text-preset-5);
+  line-height: var(--lh-text-preset-5);
+  letter-spacing: var(--ls-text-preset-5);
+}
