@@ -152,32 +152,27 @@ body {
   font-family: var(--ff-sans-serif);
   color: var(--grey-500);
   background-color: var(--white);
+  min-height: 100vh;
 }
 
 main {
+  padding-block: var(--space-600);
   display: grid;
-  place-content: center;
-  grid-template-columns: 314px;
+  place-items: center;
   min-height: 100vh;
   gap: var(--space-600);
 }
 
 .title-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(314px, 540px);
   gap: var(--space-200);
-  justify-self: center;
 }
 
 .title,
 .headline,
 .description {
   text-align: center;
-}
-
-.card-wrapper {
-  display: grid;
-  gap: var(--space-400);
 }
 
 .card {
@@ -187,6 +182,8 @@ main {
   flex-direction: column;
   gap: var(--space-400);
   box-shadow: 0 15px 30px -11px rgb(131, 166, 210, 0.5);
+  height: 250px;
+  max-width: 350px;
 }
 
 .card__icon {
@@ -209,3 +206,73 @@ main {
 .card--blue {
   border-top: var(--space-50) solid var(--blue);
 }
+
+/* =====================
+   CSS Grid Areas Practice
+   ===================== */
+
+.card-wrapper {
+  display: grid;
+  gap: var(--space-400);
+  grid-template-columns: minmax(314px, 1fr);
+  grid-template-areas:
+    "supervisor"
+    "team-builder"
+    "karma"
+    "calculator";
+}
+
+.supervisor {
+  grid-area: supervisor;
+}
+
+.team-builder {
+  grid-area: team-builder;
+}
+
+.karma {
+  grid-area: karma;
+}
+
+.calculator {
+  grid-area: calculator;
+}
+
+@media (min-width: 48em) {
+  .card-wrapper {
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    grid-template-areas:
+      "supervisor supervisor"
+      "karma team-builder"
+      "calculator calculator";
+  }
+  .supervisor,
+  .calculator {
+    justify-self: center;
+  }
+}
+
+@media (min-width: 90em) {
+  .card-wrapper {
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-template-areas:
+      "supervisor team-builder calculator"
+      "supervisor karma calculator";
+  }
+
+  .supervisor,
+  .calculator {
+    align-self: center;
+  }
+}
+
+/* =====================
+   CSS Grid Practice
+   ===================== */
+
+/* .card-wrapper {
+  display: grid;
+  gap: var(--space-400);
+  grid-template-columns: repeat(auto-fit, minmax(314px, 350px));
+  justify-content: center;
+} */
