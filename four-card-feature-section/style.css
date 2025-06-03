@@ -97,6 +97,9 @@ h6 {
   --space-300: 1.5rem; /* 24px */
   --space-200: 1rem; /* 16px */
   --space-100: 0.5rem; /* 8px */
+  --space-50: 0.25rem; /* 4px */
+
+  --icon-dm: 64px;
 }
 
 /* =====================
@@ -154,6 +157,7 @@ body {
 main {
   display: grid;
   place-content: center;
+  grid-template-columns: 314px;
   min-height: 100vh;
   gap: var(--space-600);
 }
@@ -162,7 +166,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: var(--space-200);
-  max-width: 316px;
   justify-self: center;
 }
 
@@ -173,7 +176,36 @@ main {
 }
 
 .card-wrapper {
+  display: grid;
+  gap: var(--space-400);
 }
 
 .card {
+  border-radius: var(--space-100);
+  padding: var(--space-400);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-400);
+  box-shadow: 0 15px 30px -11px rgb(131, 166, 210, 0.5);
+}
+
+.card__icon {
+  max-width: var(--icon-dm);
+  align-self: flex-end;
+}
+
+.card--cyan {
+  border-top: var(--space-50) solid var(--cyan);
+}
+
+.card--red {
+  border-top: var(--space-50) solid var(--red);
+}
+
+.card--orange {
+  border-top: var(--space-50) solid var(--orange);
+}
+
+.card--blue {
+  border-top: var(--space-50) solid var(--blue);
 }
