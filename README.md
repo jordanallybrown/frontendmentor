@@ -10,6 +10,7 @@ These are my solutions to the Frontend Mentor challenges. Frontend Mentor offers
 | 2   | [Blog Preview Card](https://github.com/jordanallybrown/frontendmentor/tree/main/blog-preview-card-main)                           | [Live link](https://jordanallybrown.github.io/frontendmentor/blog-preview-card-main/)              | Newbie |
 | 3   | [Recipe Page](https://github.com/jordanallybrown/frontendmentor/tree/main/recipe-page-main)                                       | [Live link](https://jordanallybrown.github.io/frontendmentor/recipe-page-main/)                    | Newbie |
 | 4   | [Product Preview Card Component](https://github.com/jordanallybrown/frontendmentor/tree/main/product-preview-card-component-main) | [Live link](https://jordanallybrown.github.io/frontendmentor/product-preview-card-component-main/) | Newbie |
+| 5   | [Four Card Feature Section](https://github.com/jordanallybrown/frontendmentor/tree/main/four-card-feature-section)                | [Live link](https://jordanallybrown.github.io/frontendmentor/four-card-feature-section/)           | Newbie |
 
 ## Author
 
