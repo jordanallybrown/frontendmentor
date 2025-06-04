@@ -171,4 +171,10 @@ main {
 
 .card-wrapper {
   max-width: var(--max-width-sm);
+  display: grid;
+  gap: var(--space-400);
+}
+
+.card {
+  border: 2px solid palevioletred;
 }
