@@ -207,6 +207,11 @@ main {
   border-top: var(--space-50) solid var(--blue);
 }
 
+.card header {
+  display: grid;
+  gap: var(--space-100);
+}
+
 /* =====================
    CSS Grid Areas Practice
    ===================== */
