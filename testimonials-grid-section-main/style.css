@@ -68,6 +68,7 @@ h6 {
   --purple-300: hsl(264, 82%, 80%);
   --purple-500: hsl(263, 55%, 52%);
   --white: hsl(0, 0%, 100%);
+  --off-white: #f6f5f6;
   --grey-100: hsl(214, 17%, 92%);
   --grey-200: hsl(0, 0%, 81%);
   --grey-400: hsl(224, 10%, 45%);
@@ -100,6 +101,8 @@ h6 {
   --space-200: 1rem; /* 16px */
   --space-100: 0.5rem; /* 8px */
   --space-50: 0.25rem; /* 4px */
+
+  --shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.5);
 
   --icon-md: 28px;
   --max-width-sm: 305px; /* card wrapper on mobile */
@@ -140,6 +143,30 @@ h6 {
   letter-spacing: var(--ls-text-preset-4);
 }
 
+.bg-purple-500 {
+  background-color: var(--purple-500);
+}
+
+.bg-grey-500 {
+  background-color: var(--grey-500);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-grey-500 {
+  color: var(--grey-500);
+}
+
 /* =====================
    Helper Classes
    ===================== */
@@ -159,7 +186,7 @@ h6 {
    ===================== */
 body {
   font-family: var(--ff-sans-serif);
-  background-color: var(--white);
+  background-color: var(--off-white);
 }
 
 main {
@@ -176,5 +203,22 @@ main {
 }
 
 .card {
-  border: 2px solid palevioletred;
+  padding: var(--space-400);
+  border-radius: var(--space-100);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: var(--space-200);
+}
+
+.card__profile {
+  display: grid;
+  grid-template-columns: var(--icon-md) auto;
+  align-items: center;
+  gap: 0 var(--space-200);
+}
+
+.card__profile .icon {
+  width: var(--icon-md);
+  height: var(--icon-md);
+  grid-row: span 2;
 }
