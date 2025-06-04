@@ -211,7 +211,7 @@ main {
    CSS Grid Areas Practice
    ===================== */
 
-/* .card-wrapper {
+.card-wrapper {
   display: grid;
   gap: var(--space-400);
   grid-template-columns: minmax(314px, 1fr);
@@ -264,17 +264,16 @@ main {
   .calculator {
     align-self: center;
   }
-} */
+}
 
 /* =====================
    CSS Grid Practice
    ===================== */
 
-.card-wrapper {
+/* .card-wrapper {
   display: grid;
   gap: var(--space-400);
   grid-template-columns: minmax(314px, 1fr);
-  /* justify and align will center all elements, to not have to do -self in alignment */
   justify-items: center;
   align-items: center;
 }
@@ -303,4 +302,4 @@ main {
   .calculator {
     grid-column: 2 / 3;
   }
-}
+} */
