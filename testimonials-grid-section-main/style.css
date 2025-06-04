@@ -93,6 +93,7 @@ h6 {
   --lh-text-preset-4: 1.1;
   --ls-text-preset-4: 0;
 
+  --space-600: 4.625rem; /* add larger space 74px*/
   --space-500: 2.5rem; /* 40px */
   --space-400: 2rem; /* 32px */
   --space-300: 1.5rem; /* 24px */
@@ -100,7 +101,8 @@ h6 {
   --space-100: 0.5rem; /* 8px */
   --space-50: 0.25rem; /* 4px */
 
-  --icon-dm: 28px;
+  --icon-md: 28px;
+  --max-width-sm: 305px; /* card wrapper on mobile */
 }
 
 /* =====================
@@ -155,3 +157,18 @@ h6 {
 /* =====================
    Custom Styles
    ===================== */
+body {
+  font-family: var(--ff-sans-serif);
+  background-color: var(--white);
+}
+
+main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding-block: var(--space-600);
+}
+
+.card-wrapper {
+  max-width: var(--max-width-sm);
+}
