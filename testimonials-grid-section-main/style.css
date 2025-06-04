@@ -1,0 +1,145 @@
+/* =====================
+   Reset Styles
+   ===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* =====================
+   CSS Variables
+   ===================== */
+:root {
+  --purple-50: hsl(260, 100%, 95%);
+  --purple-300: hsl(264, 82%, 80%);
+  --purple-500: hsl(263, 55%, 52%);
+  --white: hsl(0, 0%, 100%);
+  --grey-100: hsl(214, 17%, 92%);
+  --grey-200: hsl(0, 0%, 81%);
+  --grey-400: hsl(224, 10%, 45%);
+  --grey-500: hsl(217, 19%, 35%);
+  --dark-blue: hsl(219, 29%, 14%);
+  --black: hsl(0, 0%, 7%);
+  --ff-sans-serif: "Barlow Semi Condensed", sans-serif;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fs-text-preset-1: 1.25rem;
+  --lh-text-preset-1: 1.2;
+  --ls-text-preset-1: 0;
+
+  --fs-text-preset-2: 0.8125rem;
+  --lh-text-preset-2: 1.1;
+  --ls-text-preset-2: 0;
+
+  --fs-text-preset-3: 0.8125rem;
+  --lh-text-preset-3: 1.4;
+  --ls-text-preset-3: 0;
+
+  --fs-text-preset-4: 0.6875rem;
+  --lh-text-preset-4: 1.1;
+  --ls-text-preset-4: 0;
+
+  --space-700: 4.625rem; /* add larger space 74px*/
+  --space-600: 3.75rem; /* add larger space 60px*/
+  --space-500: 2.5rem; /* 40px */
+  --space-400: 2rem; /* 32px */
+  --space-300: 1.5rem; /* 24px */
+  --space-200: 1rem; /* 16px */
+  --space-100: 0.5rem; /* 8px */
+  --space-50: 0.25rem; /* 4px */
+
+  --icon-dm: 64px;
+}
+
+/* =====================
+   Utility Classes
+   ===================== */
+.text-preset-1 {
+  font-family: var(--ff-sans-serif);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-text-preset-1);
+  line-height: var(--lh-text-preset-1);
+  letter-spacing: var(--ls-text-preset-1);
+}
+
+.text-preset-2 {
+  font-family: var(--ff-sans-serif);
+  font-weight: var(--fw-extralight);
+  font-size: var(--fs-text-preset-2);
+  line-height: var(--lh-text-preset-2);
+  letter-spacing: var(--ls-text-preset-2);
+}
+
+.text-preset-3 {
+  font-family: var(--ff-sans-serif);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-text-preset-3);
+  line-height: var(--lh-text-preset-3);
+  letter-spacing: var(--ls-text-preset-3);
+}
+
+.text-preset-4 {
+  font-family: var(--ff-sans-serif);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-text-preset-4);
+  line-height: var(--lh-text-preset-4);
+  letter-spacing: var(--ls-text-preset-4);
+}
+
+/* =====================
+   Custom Styles
+   ===================== */
